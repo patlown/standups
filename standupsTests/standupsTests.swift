@@ -2,35 +2,42 @@
 //  standupsTests.swift
 //  standupsTests
 //
-//  Created by Patrick Lown on 3/24/24.
+//  Created by Patrick Lown on 3/26/24.
 //
 
 import XCTest
+import ComposableArchitecture
 @testable import standups
 
+@MainActor
 final class standupsTests: XCTestCase {
-
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testAddDeleteAttendee() async {
+        let store = TestStore(
+            initialState: StandupFormFeature.State(
+                standup: Standup(
+                    id: UUID(),
+                    attendees: [
+                        Attendee(id: UUID())
+                    ]
+                )
+            )
+        ) {
+            StandupFormFeature()
+        } withDependencies: {
+            $0.uuid = .incrementing
+        }
+        
+        await store.send(.addAttendeeButtonTapped) {
+            $0.focus = .attendee(UUID(0))
+            $0.standup.attendees.append(
+                Attendee(id: UUID(0))
+            )
+        }
+        await store.send(.deleteAttendees(atOffsets: [1])) {
+            $0.focus = .attendee($0.standup.attendees[0].id)
+            $0.standup.attendees.remove(at: 1)
         }
     }
-
 }
+
