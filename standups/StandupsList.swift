@@ -11,7 +11,7 @@ import ComposableArchitecture
 @Reducer
 struct StandupsListFeature {
     @ObservableState
-    struct State {
+    struct State: Equatable {
         @Presents var addStandup: StandupFormFeature.State?
         var standups: IdentifiedArrayOf<Standup> = []
     }

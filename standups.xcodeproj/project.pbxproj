@@ -17,6 +17,7 @@
 		8D22E9DA2BB0F498009C027D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D22E9D92BB0F498009C027D /* CardView.swift */; };
 		8D3CC7362BB111A1007A73AE /* StandupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CC7352BB111A1007A73AE /* StandupForm.swift */; };
 		8D487BF82BB3B5B400074874 /* standupsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D487BF72BB3B5B400074874 /* standupsTests.swift */; };
+		8D57B5AF2BB50832009ECC43 /* StandupsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57B5AE2BB50832009ECC43 /* StandupsListTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,7 @@
 		8D3CC7352BB111A1007A73AE /* StandupForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupForm.swift; sourceTree = "<group>"; };
 		8D487BF52BB3B5B400074874 /* standupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = standupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D487BF72BB3B5B400074874 /* standupsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = standupsTests.swift; sourceTree = "<group>"; };
+		8D57B5AE2BB50832009ECC43 /* StandupsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				8D487BF72BB3B5B400074874 /* standupsTests.swift */,
+				8D57B5AE2BB50832009ECC43 /* StandupsListTests.swift */,
 			);
 			path = standupsTests;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D487BF82BB3B5B400074874 /* standupsTests.swift in Sources */,
+				8D57B5AF2BB50832009ECC43 /* StandupsListTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
