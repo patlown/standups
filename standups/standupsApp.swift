@@ -13,17 +13,17 @@ struct standupsApp: App {
     var body: some Scene {
         WindowGroup {
             NavigationStack {
-                StandupsList(store: Store(initialState: StandupsListFeature.State(
-                    addStandup: StandupFormFeature.State(focus: .title, standup: .mock)
-                )) {
-                    StandupsListFeature()
-                })
-                
 //                StandupsList(store: Store(initialState: StandupsListFeature.State(
-//
+//                    addStandup: StandupFormFeature.State(focus: .title, standup: .mock)
 //                )) {
 //                    StandupsListFeature()
 //                })
+                
+                StandupsList(store: Store(initialState: StandupsListFeature.State(
+
+                )) {
+                    StandupsListFeature()
+                })
             }
         }
     }
