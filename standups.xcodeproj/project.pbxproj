@@ -18,6 +18,8 @@
 		8D3CC7362BB111A1007A73AE /* StandupForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3CC7352BB111A1007A73AE /* StandupForm.swift */; };
 		8D487BF82BB3B5B400074874 /* standupsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D487BF72BB3B5B400074874 /* standupsTests.swift */; };
 		8D57B5AF2BB50832009ECC43 /* StandupsListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57B5AE2BB50832009ECC43 /* StandupsListTests.swift */; };
+		8D57B5B22BB6594C009ECC43 /* StandupDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57B5B02BB65947009ECC43 /* StandupDetail.swift */; };
+		8D57B5B42BB7AC5E009ECC43 /* StandupDetailTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D57B5B32BB7AC5E009ECC43 /* StandupDetailTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,8 @@
 		8D487BF52BB3B5B400074874 /* standupsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = standupsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D487BF72BB3B5B400074874 /* standupsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = standupsTests.swift; sourceTree = "<group>"; };
 		8D57B5AE2BB50832009ECC43 /* StandupsListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupsListTests.swift; sourceTree = "<group>"; };
+		8D57B5B02BB65947009ECC43 /* StandupDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetail.swift; sourceTree = "<group>"; };
+		8D57B5B32BB7AC5E009ECC43 /* StandupDetailTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandupDetailTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,14 +90,15 @@
 		8D22E9A72BB0ECCB009C027D /* standups */ = {
 			isa = PBXGroup;
 			children = (
+				8D57B5B02BB65947009ECC43 /* StandupDetail.swift */,
 				8D22E9D92BB0F498009C027D /* CardView.swift */,
 				8D22E9A82BB0ECCB009C027D /* standupsApp.swift */,
 				8D22E9AA2BB0ECCB009C027D /* ContentView.swift */,
 				8D22E9AC2BB0ECCD009C027D /* Assets.xcassets */,
 				8D22E9AE2BB0ECCD009C027D /* Preview Content */,
 				8D22E9D52BB0F082009C027D /* StandupsList.swift */,
-				8D22E9D72BB0F1D7009C027D /* Models.swift */,
 				8D3CC7352BB111A1007A73AE /* StandupForm.swift */,
+				8D22E9D72BB0F1D7009C027D /* Models.swift */,
 			);
 			path = standups;
 			sourceTree = "<group>";
@@ -118,6 +123,7 @@
 			children = (
 				8D487BF72BB3B5B400074874 /* standupsTests.swift */,
 				8D57B5AE2BB50832009ECC43 /* StandupsListTests.swift */,
+				8D57B5B32BB7AC5E009ECC43 /* StandupDetailTests.swift */,
 			);
 			path = standupsTests;
 			sourceTree = "<group>";
@@ -233,6 +239,7 @@
 				8D22E9D62BB0F082009C027D /* StandupsList.swift in Sources */,
 				8D22E9A92BB0ECCB009C027D /* standupsApp.swift in Sources */,
 				8D22E9D82BB0F1D7009C027D /* Models.swift in Sources */,
+				8D57B5B22BB6594C009ECC43 /* StandupDetail.swift in Sources */,
 				8D22E9DA2BB0F498009C027D /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,6 +250,7 @@
 			files = (
 				8D487BF82BB3B5B400074874 /* standupsTests.swift in Sources */,
 				8D57B5AF2BB50832009ECC43 /* StandupsListTests.swift in Sources */,
+				8D57B5B42BB7AC5E009ECC43 /* StandupDetailTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
